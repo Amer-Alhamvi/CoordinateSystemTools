@@ -128,10 +128,10 @@ def correctPointsOrder(points):
         pointsX.append(points[i][0] - B[0]>0)
         pointsY.append(points[i][1] - B[1]>0)
 
-    if pointsX[0] != pointsX[1] and pointsX[0] != pointsX[1]:
+    if pointsX[0] != pointsX[1] and pointsY[0] != pointsY[1]:
         pointsX[1], pointsY[1], pointsX[2], pointsY[2] = pointsX[2], pointsY[2], pointsX[1], pointsY[1]
         points[1], points[2] = points[2], points[1]
-    if pointsX[2] != pointsX[1] and pointsX[2] != pointsX[1]:
+    if pointsX[2] != pointsX[1] and pointsY[2] != pointsY[1]:
         pointsX[3], pointsY[3], pointsX[2], pointsY[2] = pointsX[2], pointsY[2], pointsX[3], pointsY[3]
         points[3], points[2] = points[2], points[3]
 
