@@ -3,14 +3,10 @@ There two functionalities in this file
 
 1/ Set the points of a polygon in the correct order so that no two lines intersect exept at the points
 
-  correctPointOrder(points) takes a list of four pairs of coordinates each represenging a point and re-arranges the points as needed
+  Creat a new class with eg. x = CoordinateSystemTools((x0,y0), (x1,y1), (x2,y2), (x3,y3))
+  
+  The order is corrected automatically
   
 2/ Find if a point is inside of polygon of n sides
 
-isInsidePolygon(points, p) takes two variables
-
-1- points: a list of points (x,y) defining the polygon
-
-2- p: a point (x,y) to check if inside of the polygon
-
-return: boolean
+  x(x,y) returns a boolean
